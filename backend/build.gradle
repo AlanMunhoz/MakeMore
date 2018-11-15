@@ -24,6 +24,12 @@ sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
 
 dependencies {
+
+    appengine.tools.cloudSdkHome="C:\\Program Files (x86)\\Google\\Cloud SDK\\google-cloud-sdk"
+    //appengine.run.host = "0.0.0.0"
+    implementation project(":JavaLib")
+
+
     implementation 'com.google.endpoints:endpoints-framework:2.0.9'
     implementation 'javax.inject:javax.inject:1'
 

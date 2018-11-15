@@ -16,9 +16,10 @@ import javax.inject.Named;
                 packagePath = ""
         )
 )
-public class MyEndpoint {
 
-    /** A simple endpoint method that takes a name and says Hi back */
+//old
+public class MyEndpoint {
+    // A simple endpoint method that takes a name and says Hi back
     @ApiMethod(name = "sayHi")
     public MyBean sayHi(@Named("name") String name) {
         MyBean response = new MyBean();
@@ -27,4 +28,12 @@ public class MyEndpoint {
         return response;
     }
 
+    //new
+    @ApiMethod(name = "getJoke")
+    public MyBean getJoke() {
+        MyBean response = new MyBean();
+        response.getData();
+
+        return response;
+    }
 }

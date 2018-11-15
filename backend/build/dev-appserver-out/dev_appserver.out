@@ -1,0 +1,27 @@
+Warning: Google App Engine Java 7 runtime is deprecated.
+Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
+nov 15, 2018 3:37:54 PM java.util.prefs.WindowsPreferences <init>
+ADVERT?NCIA: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+nov 15, 2018 3:37:55 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFORMA??ES: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+nov 15, 2018 3:37:55 PM com.google.apphosting.utils.jetty.JettyLogger info
+INFORMA??ES: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
+nov 15, 2018 5:37:55 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+ADVERT?NCIA: Your working directory, (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend) is not equal to your 
+web application root (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+nov 15, 2018 5:37:55 PM com.google.apphosting.utils.jetty.JettyLogger info
+INFORMA??ES: jetty-6.1.x
+nov 15, 2018 5:37:58 PM com.google.apphosting.utils.jetty.JettyLogger info
+INFORMA??ES: Started SelectChannelConnector@localhost:8080
+nov 15, 2018 5:37:58 PM com.google.appengine.tools.development.AbstractModule startup
+INFORMA??ES: Module instance default is running at http://localhost:8080/
+nov 15, 2018 5:37:58 PM com.google.appengine.tools.development.AbstractModule startup
+INFORMA??ES: The admin console is running at http://localhost:8080/_ah/admin
+nov 15, 2018 3:37:58 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFORMA??ES: Dev App Server is now running
+nov 15, 2018 3:38:05 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
+ADVERT?NCIA: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
+nov 15, 2018 3:38:05 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
+ADVERT?NCIA: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")

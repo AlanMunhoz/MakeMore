@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements EndpointsAsyncTas
          * Configuring intent to Android Library
          */
         final Intent intent = new Intent(this, JokeActivity.class);
-        intent.putExtra("ExtraKey", strJoke);
+        intent.putExtra(getString(R.string.extra_key), strJoke);
 
         /**
          * Calling Android Library

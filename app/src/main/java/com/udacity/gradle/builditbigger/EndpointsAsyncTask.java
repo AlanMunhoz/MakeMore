@@ -15,12 +15,17 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 
 import java.io.IOException;
 
-public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<EndpointsAsyncTask.CallbackAsyncTask, Void, String> {
+
     private static MyApi myApiService = null;
-    private Context context;
+    private CallbackAsyncTask callbackAsyncTask;
+
+    public interface CallbackAsyncTask {
+        void resultOnPostExecute(String strJoke);
+    }
 
     @Override
-    protected String doInBackground(Pair<Context, String>... params) {
+    protected String doInBackground(CallbackAsyncTask... callbackAsyncTasks) {
         if(myApiService == null) {  // Only do this once
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
@@ -40,8 +45,7 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
             myApiService = builder.build();
         }
 
-        context = params[0].first;
-        String name = params[0].second;
+        callbackAsyncTask = callbackAsyncTasks[0];
 
         try {
 
@@ -59,16 +63,6 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
     @Override
     protected void onPostExecute(String result) {
 
-        /**
-         * Configuring intent to Android Library
-         */
-        final Intent intent = new Intent(context, JokeActivity.class);
-        intent.putExtra("ExtraKey", result);
-
-        /**
-         * Calling Android Library
-         */
-        context.startActivity(intent);
-
+        callbackAsyncTask.resultOnPostExecute(result);
     }
 }

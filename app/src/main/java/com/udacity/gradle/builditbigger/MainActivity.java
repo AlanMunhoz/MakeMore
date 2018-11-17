@@ -1,20 +1,17 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.devandroid.androidlib.JokeActivity;
-import com.devandroid.javalib.RequestJokes;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements EndpointsAsyncTask.CallbackAsyncTask {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +59,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         */
 
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "AsynkTask"));
+        new EndpointsAsyncTask().execute(this);
 
     }
 
 
+    @Override
+    public void resultOnPostExecute(String strJoke) {
+
+        /**
+         * Configuring intent to Android Library
+         */
+        final Intent intent = new Intent(this, JokeActivity.class);
+        intent.putExtra("ExtraKey", strJoke);
+
+        /**
+         * Calling Android Library
+         */
+        startActivity(intent);
+    }
 }

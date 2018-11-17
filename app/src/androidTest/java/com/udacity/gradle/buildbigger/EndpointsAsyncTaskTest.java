@@ -1,11 +1,9 @@
 package com.udacity.gradle.buildbigger;
 
-import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
 import com.udacity.gradle.builditbigger.EndpointsAsyncTask;
 
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -16,19 +14,14 @@ import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.fail;
 
-
 @RunWith(AndroidJUnit4.class)
-public class MainActivityTest implements EndpointsAsyncTask.CallbackAsyncTask {
-
-    @Rule
-    public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
+public class EndpointsAsyncTaskTest implements EndpointsAsyncTask.CallbackAsyncTask {
 
     CountDownLatch countDownLatch;
     String joke;
 
     @Test
     public void returnAsyncTaskEmptyTest() {
-
 
         try
         {

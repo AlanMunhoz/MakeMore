@@ -1,47 +1,27 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-nov 17, 2018 12:02:00 PM java.util.prefs.WindowsPreferences <init>
+nov 17, 2018 10:46:24 PM java.util.prefs.WindowsPreferences <init>
 ADVERT?NCIA: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
-nov 17, 2018 12:02:00 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+nov 17, 2018 10:46:25 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFORMA??ES: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-nov 17, 2018 12:02:00 PM com.google.apphosting.utils.jetty.JettyLogger info
+nov 17, 2018 10:46:25 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFORMA??ES: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-nov 17, 2018 2:02:01 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+nov 18, 2018 12:46:25 AM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 ADVERT?NCIA: Your working directory, (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend) is not equal to your 
 web application root (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-nov 17, 2018 2:02:01 PM com.google.apphosting.utils.jetty.JettyLogger info
+nov 18, 2018 12:46:25 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFORMA??ES: jetty-6.1.x
-nov 17, 2018 2:02:03 PM com.google.apphosting.utils.jetty.JettyLogger info
+nov 18, 2018 12:46:27 AM com.google.apphosting.utils.jetty.JettyLogger info
 INFORMA??ES: Started SelectChannelConnector@localhost:8080
-nov 17, 2018 2:02:03 PM com.google.appengine.tools.development.AbstractModule startup
+nov 18, 2018 12:46:27 AM com.google.appengine.tools.development.AbstractModule startup
 INFORMA??ES: Module instance default is running at http://localhost:8080/
-nov 17, 2018 2:02:03 PM com.google.appengine.tools.development.AbstractModule startup
+nov 18, 2018 12:46:27 AM com.google.appengine.tools.development.AbstractModule startup
 INFORMA??ES: The admin console is running at http://localhost:8080/_ah/admin
-nov 17, 2018 12:02:03 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+nov 17, 2018 10:46:27 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFORMA??ES: Dev App Server is now running
-nov 17, 2018 12:02:20 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
+nov 17, 2018 10:46:34 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
 ADVERT?NCIA: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-nov 17, 2018 12:02:20 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
+nov 17, 2018 10:46:34 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
 ADVERT?NCIA: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-nov 17, 2018 12:02:21 PM com.google.appengine.tools.development.LocalResourceFileServlet doGet
-ADVERT?NCIA: No file found for: /favicon.ico
-nov 17, 2018 12:15:55 PM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
-INFORMA??ES: C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
-nov 17, 2018 12:15:55 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
-INFORMA??ES: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-nov 17, 2018 12:15:56 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-ADVERT?NCIA: Your working directory, (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend) is not equal to your 
-web application root (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend)
-You will not be able to access files from your working directory on the production server.
-
-nov 17, 2018 12:19:06 PM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
-INFORMA??ES: C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
-nov 17, 2018 12:19:06 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
-INFORMA??ES: Overwriting system property key 'java.util.logging.config.file', value 'C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-nov 17, 2018 12:19:06 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
-ADVERT?NCIA: Your working directory, (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend) is not equal to your 
-web application root (C:\Users\Alan\Dropbox\GitHubProjects\MakeMore\backend\build\exploded-backend)
-You will not be able to access files from your working directory on the production server.
-
